@@ -13,10 +13,10 @@ const options = {
 };
 
 
-fetch('https://exercisedb.p.rapidapi.com/exercises?', options)
-	.then(response => response.json())
-	.then(response => findEx(response))
-	.catch(err => console.error(err));
+// fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', options)
+// 	.then(response => response.json())
+// 	.then(response => findEx(response))
+// 	.catch(err => console.error(err));
 
 
 const search = (response) => {
@@ -29,18 +29,19 @@ const search = (response) => {
 //     return data
 // }
 
-// const handleSearch = () => {
-//     if(search){
-//         const exer = fetch('https://exercisedb.p.rapidapi.com/exercises/')
-//         exer.then(recv => recv.json())
-//         exer.then(data => console.log(data))
-//         const searchesExercices = exer.filter((exercise) => exercise.name.toLowerCase().includes(search) || 
-//         exercise.target.toLowerCase().includes(search),
-//         exercise.equipment.toLowerCase().includes(search),
-//         exercise.bodyPart.toLowerCase().includes(search)
-//         )
-//         return searchesExercices
-//     }
+const handleSearch = () => {
+    // if(search){
+    //     const exer = fetch('https://exercisedb.p.rapidapi.com/exercises/')
+    //     exer.then(recv => recv.json())
+    //     exer.then(data => console.log(data))
+    //     // const searchesExercices = exer.filter((exercise) => exercise.name.toLowerCase().includes(search) || 
+    //     exercise.target.toLowerCase().includes(search),
+    //     exercise.equipment.toLowerCase().includes(search),
+    //     exercise.bodyPart.toLowerCase().includes(search)
+    //     )
+    //     return searchesExercices
+    // console.log()
+    }
 
 
 // }
@@ -62,16 +63,16 @@ const findEx = (response) => {
 }
 
 const spec = (data) => {
-    for(const item of data){
-        if(search){
-            const searchesExercices = item.filter((exercise) => {exercise.name.toLowerCase().includes(search) || 
-            exercise.target.toLowerCase().includes(search) ||
-            exercise.equipment.toLowerCase().includes(search) || 
-            exercise.bodyPart.toLowerCase().includes(search)
-            })
-        console.log(searchesExercices) 
-        }
-    }
+    // for(const item of data){
+    //     if(search){
+    //         // const searchesExercices = item.filter((exercise) => {exercise.name.toLowerCase().includes(search) || 
+    //         exercise.target.toLowerCase().includes(search) ||
+    //         exercise.equipment.toLowerCase().includes(search) || 
+    //         exercise.bodyPart.toLowerCase().includes(search)
+    //         })
+        console.log(data) 
+        //}
+    
 }
 
 

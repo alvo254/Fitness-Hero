@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
 body{
     margin: 0;
     padding: 0;
+    font-family: poppins;
 
 }
 nav{
     padding-top: 30px;
     padding-bottom: 15px;
     background-color: rgb(240, 240, 240);
+    
+}
+.jobmaster{
+    display: flex;
+    /* margin-top: 890; */
     
 }
 .naver{
@@ -57,6 +65,7 @@ button{
 .master{
     display: flex;
     padding-top: 30px;
+    width: 100%;
     /* background: lightgray; */
 }
 .net{
@@ -92,3 +101,269 @@ button{
     }
 
 }
+.jobber{
+
+    /* background-color: orange; */
+    width: 540;
+    padding-left: 120px;
+    padding-top: 120px;
+
+}
+.categ{
+    overflow-y: scroll;
+    height: 620px;
+    
+}
+
+.categ h3{
+    font-size: 24;
+    font-family: sans-serif;
+
+}
+.loc h3{
+    font-size: 24;
+    font-family: sans-serif;
+}
+.categ li{
+    list-style: none;
+    font-size: 20;
+    padding-left: 19px;
+
+    
+    
+}
+.loc li{
+    list-style: none;
+    font-size: 20;
+    padding-left: 19px;
+}
+
+.categ li a{
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+    background: gray;
+}
+
+
+.jobber h4 span{
+    color: orange;
+}
+.loc li a{
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+}
+.retro{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+.price {
+    padding-top: 20;
+}
+
+.jobberleft{
+    width: 100%;
+    /* background-color: rgb(216, 206, 206); */
+    flex-direction: column;
+}
+.cont h3{
+    padding-left: 20px;
+}
+.cont span{
+    padding-left: 150;
+}
+.icons p{
+    padding-left: 10px;
+}
+
+.top{
+    padding-left: 150;
+    font-size: 25;
+    font-weight: 800;
+}
+.top span{
+    color: orange;
+}
+
+
+.wrap{
+    /* display: inline; */
+    width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    width: 300px;
+    background-color: #fff;
+    float: left;
+    margin: 10px;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.cont .icons a i{
+    padding: 3;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+/* .mastercard{
+    display: block;
+} */
+.all{
+    display: flex;
+}
+.all .range{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.range input{
+    width: 90px;
+    height: 40;
+    text-align: center;
+    outline: none;
+    border: 1px solid darkgray;
+    -moz-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.all .separator{
+    /* background: red; */
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    display: flex;
+}
+
+.carosusel{
+    position: relative;
+
+
+}
+
+.selItem{
+    height: 300px;
+    background: gray;
+    padding: 1em;
+
+}
+
+.carolNav{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    /* bottom: 0;
+    left: 0;
+    background-color: orange;
+    text-align: center; */
+}
+.carolbtn{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background: black;
+    margin-bottom: 120px;
+
+}
+.carolbtn carolbtn-selected{
+    background: rgba(255,255,255, 0.2);
+}
+
+
+.selItem selItem-selected{
+    display: block;
+    background: rgba(255,255,255, 0.2);
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    position: absolute;
+    /* bottom: 0; */
+    background-color: darkgray;
+    /* background: linear-gradient(to right, rgb(124, 122, 122), rgb(230, 162, 28)); */
+    color: white;
+    padding: 100px 0px 30px;
+    /* border-top-left-radius: 120px; */
+    font-size: 23px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.logo1{
+    width: 80px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.emailid{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid #ccc ;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+
+form input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border:0 ;
+}
+
+
