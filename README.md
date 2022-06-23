@@ -9,3 +9,5 @@ To help reduce the high prevalence of obesity, cardiovascular disease, and physi
 
 Blog link: https://medium.com/@alvinndungu/fitness-hero-528ea06b1d1b
 Design link: https://www.figma.com/file/HTE4zwHKqLAeAlXdtkNdPD/Untitled?node-id=0%3A1
+
+api in use : https://github.com/wrkout/exercises.json.git
