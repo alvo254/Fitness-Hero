@@ -13,4 +13,22 @@ fetch('http://localhost:3000/exercises?')
 	.then(response => getExercise(response))
 	.catch(err => console.error(err));
 
-
+    const getCurrent = () => {
+        // const level = train.querySelector('')
+        fetch('http://localhost:3000/exercises')
+        .then(response => response.json())
+        .then(resp => {
+            for(const key of resp){
+                const train = document.querySelector('.categ')
+                const newOne = document.createElement("li")
+    
+                newOne.innerText = key.name
+                train.appendChild(newOne)
+                newOne.style.cursor = "pointer"
+                newOne.addEventListener('click', () => searchExercies(key.instructions))
+            //console.log(key.level)
+    
+            }
+        })
+        .catch(err => console.error(err));
+    }
