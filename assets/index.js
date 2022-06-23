@@ -57,10 +57,10 @@ const getExercise = (response) => {
 	//console.log(exer)
 	for(const key of exer){
 		let cat = key.category
-		// console.log(cat)
-		//console.log(key.level)
-		// console.log(key.category)
-		// console.log(key.level)
+		console.log(cat)
+		console.log(key.level)
+		console.log(key.category)
+		console.log(key.level)
 	}
 }
 
