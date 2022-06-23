@@ -28,6 +28,7 @@ const getCurrent = (item) => {
 			newOne.innerText = some.name
 			train.appendChild(newOne)
 			newOne.addEventListener('click', () => searchExercies(some.instructions))
+			newOne.style.cursor = "pointer"
 			console.log(some.name)
 		})
 		console.log(vitu)
@@ -51,7 +52,7 @@ const getCurrent = (item) => {
 const searchExercies = (nameId) => {
 	//const eve = document.querySelector('.cont')
 
-	fetch(`https://alvo254.github.io/fitnessapi/exercises.json${nameId}`)
+	fetch(`https://alvo254.github.io/fitnessapi/exercises.json?${nameId}`)
 	.then(response => response.json())
 	.then(recv => {
 		// for(const data of recv){
