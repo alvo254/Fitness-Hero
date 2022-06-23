@@ -2,49 +2,72 @@ const main = () => {
 	// getExercise()
 	getCurrent()
 }
-fetch('http://localhost:3000/exercises?')
+fetch('https://alvo254.github.io/fitnessapi/exercises.json')
 	.then(response => response.json())
-	.then(response => getExercise(response))
+	//.then(response => showAll(response.exercises))
+	.then(response => getCurrent(response.exercises))
 	.catch(err => console.error(err));
 
+// const showAll = (item) => {
+// 	const vitu = item
+// 	vitu.forEach(some => {console.log(some.name)})
+// 	//console.log(vitu)
+// 	// console.log(item)
+// }
 
-const getCurrent = () => {
+const getCurrent = (item) => {
 	// const level = train.querySelector('')
-	fetch('http://localhost:3000/exercises')
+	fetch('https://alvo254.github.io/fitnessapi/exercises.json')
 	.then(response => response.json())
 	.then(resp => {
-		for(const key of resp){
+		const vitu = item
+		vitu.forEach(some => {
 			const train = document.querySelector('.categ')
-			const newOne = document.createElement("li")
+			const newOne = document.createElement('li')
 
-			newOne.innerText = key.name
+			newOne.innerText = some.name
 			train.appendChild(newOne)
-			newOne.style.cursor = "pointer"
-			newOne.addEventListener('click', () => searchExercies(key.instructions))
-		//console.log(key.level)
+			newOne.addEventListener('click', () => searchExercies(some.instructions))
+			console.log(some.name)
+		})
+		console.log(vitu)
+		})
+		
+		// for(const key of resp){
+		// 	const train = document.querySelector('.categ')
+		// 	const newOne = document.createElement("li")
 
-		}
-	})
+		// 	newOne.innerText = key.name
+		// 	train.appendChild(newOne)
+		// 	newOne.style.cursor = "pointer"
+		// 	newOne.addEventListener('click', () => searchExercies(key.instructions))
+		// //console.log(key.level)
+
+		// }
+	
 	.catch(err => console.error(err));
 }
 
 const searchExercies = (nameId) => {
 	//const eve = document.querySelector('.cont')
 
-	fetch(`http://localhost:3000/exercises?${nameId}`)
+	fetch(`https://alvo254.github.io/fitnessapi/exercises.json${nameId}`)
 	.then(response => response.json())
 	.then(recv => {
-		
-		
-		console.log(nameId)
+		// for(const data of recv){
+			
+		// 	console.log(data.instructions)
+		// }
+		console.log(recv)
 		const newObj = document.querySelector('.cont')
-		const adapt = document.createElement('p')
+		//const adapt = document.createElement('p')
 
 
-		adapt.innerHTML = nameId
-		newObj.appendChild(adapt)
-		console.log(adapt)
-		document.querySelector('p')
+		newObj.innerHTML = nameId
+		//newObj.appendChild(adapt)
+		// document.querySelector('p').addEventListener('click', ()=>{
+		// 	newObj.querySelector('p').remove()
+		// })
 
 	// 	newObj.innerText =`
 	// 	<div class="cont">
@@ -71,17 +94,17 @@ const searchExercies = (nameId) => {
 	})
 }
 
-const getExercise = (response) => {
-	const exer = response
-	//console.log(exer)
-	for(const key of exer){
-		let cat = key.category
-		// console.log(cat)
-		//console.log(key.level)
-		// console.log(key.category)
-		// console.log(key.level)
-	}
-}
+// const getExercise = (response) => {
+// 	const exer = response
+// 	//console.log(exer)
+// 	for(const key of exer){
+// 		let cat = key.category
+// 		// console.log(cat)
+// 		//console.log(key.level)
+// 		// console.log(key.category)
+// 		// console.log(key.level)
+// 	}
+// }
 
 
 main()

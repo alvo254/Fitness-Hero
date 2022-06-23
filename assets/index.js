@@ -40,16 +40,7 @@ fetch('http://localhost:3000/exercises?')
         .then(response => response.json())
         .then(recv => {
             
-        
-		console.log(nameId)
-		const newObj = document.querySelector('.cont')
-		const adapt = document.createElement('p')
 
-
-		adapt.innerHTML = nameId
-		newObj.appendChild(adapt)
-		console.log(adapt)
-		document.querySelector('p')
     })
 }
 const getExercise = (response) => {
