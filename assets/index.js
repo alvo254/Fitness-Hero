@@ -52,4 +52,15 @@ fetch('http://localhost:3000/exercises?')
 		document.querySelector('p')
     })
 }
+const getExercise = (response) => {
+	const exer = response
+	//console.log(exer)
+	for(const key of exer){
+		let cat = key.category
+		// console.log(cat)
+		//console.log(key.level)
+		// console.log(key.category)
+		// console.log(key.level)
+	}
+}
 
