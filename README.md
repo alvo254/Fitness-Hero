@@ -19,7 +19,8 @@ api in use : https://github.com/wrkout/exercises.json.git
 
 2. `npm run build:json` - creates a JSON file with all exercises
 
-
+Things to note
+1.My api has been hosted to gh-pages by me link: https://alvo254.github.io/fitnessapi/exercises.json
 
 
 
