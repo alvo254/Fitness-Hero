@@ -32,3 +32,12 @@ fetch('http://localhost:3000/exercises?')
         })
         .catch(err => console.error(err));
     }
+
+    const searchExercies = (nameId) => {
+        //const eve = document.querySelector('.cont')
+    
+        fetch(`http://localhost:3000/exercises?${nameId}`)
+        .then(response => response.json())
+        .then(recv => {
+            
+        
