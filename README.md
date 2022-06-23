@@ -23,4 +23,7 @@ Things to note
 1.My api has been hosted to gh-pages by me link: https://alvo254.github.io/fitnessapi/exercises.json
 
 
+I had to do this because my api was in json fomrat so i had to find a way to host it
+
+
 
