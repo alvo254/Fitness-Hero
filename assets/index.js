@@ -64,3 +64,4 @@ const getExercise = (response) => {
 	}
 }
 
+main()
