@@ -50,4 +50,6 @@ fetch('http://localhost:3000/exercises?')
 		newObj.appendChild(adapt)
 		console.log(adapt)
 		document.querySelector('p')
+    })
+}
 
