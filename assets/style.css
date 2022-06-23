@@ -198,7 +198,8 @@ button{
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-    width: 300px;
+    width: 800px;
+    
     background-color: #fff;
     float: left;
     margin: 10px;
@@ -317,6 +318,11 @@ footer{
     flex-basis: 25%;
     padding: 10px;
 }
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+
 .logo1{
     width: 80px;
 }
@@ -364,6 +370,26 @@ form input{
 form button{
     background: transparent;
     border:0 ;
+    outline: none;
+    cursor: pointer;
 }
 
+form buttom .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.socials .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+}
 
+.copyright{
+    text-align: center;
+}
