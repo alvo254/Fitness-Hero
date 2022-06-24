@@ -7,12 +7,6 @@ fetch('https://alvo254.github.io/fitnessapi/exercises.json')
 	.then(response => getCurrent(response.exercises))
 	.catch(err => console.error(err));
 
-// const showAll = (item) => {
-// 	const vitu = item
-// 	vitu.forEach(some => {console.log(some.name)})
-// 	//console.log(vitu)
-// 	// console.log(item)
-// }
 
 const getCurrent = (item) => {
 	// const level = train.querySelector('')
