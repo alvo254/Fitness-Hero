@@ -60,7 +60,7 @@ const searchExercies = (nameId) => {
 		// 	console.log(data.instructions)
 		// }
 		console.log(recv)
-		const newObj = document.querySelector('.cont')
+		const newObj = document.querySelector('.post_text')
 		//const adapt = document.createElement('p')
 
 
