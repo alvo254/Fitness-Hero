@@ -34,17 +34,7 @@ const getCurrent = (item) => {
 		console.log(vitu)
 		})
 		
-		// for(const key of resp){
-		// 	const train = document.querySelector('.categ')
-		// 	const newOne = document.createElement("li")
 
-		// 	newOne.innerText = key.name
-		// 	train.appendChild(newOne)
-		// 	newOne.style.cursor = "pointer"
-		// 	newOne.addEventListener('click', () => searchExercies(key.instructions))
-		// //console.log(key.level)
-
-		// }
 	
 	.catch(err => console.error(err));
 }
