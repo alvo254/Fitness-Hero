@@ -25,5 +25,8 @@ Things to note
 
 I had to do this because my api was in json fomrat so i had to find a way to host it
 
+I made some changes to design due to requirements like no redirects allowed 
+
+
 
 
