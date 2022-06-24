@@ -10,8 +10,24 @@ nav{
     padding-top: 30px;
     padding-bottom: 15px;
     background-color: rgb(240, 240, 240);
+}
+
+
+.links #this{
+    background-color: orange;
+    padding: 12px;
+    border-radius: 12px;
+
+}
+.links #one{
+    border: 2px solid orange;
+    padding: 12px;
+}
+.links a{
     
 }
+
+
 .jobmaster{
     display: flex;
     margin-bottom: 100px;
