@@ -4,7 +4,6 @@ const main = () => {
 }
 fetch('https://alvo254.github.io/fitnessapi/exercises.json')
 	.then(response => response.json())
-	//.then(response => showAll(response.exercises))
 	.then(response => getCurrent(response.exercises))
 	.catch(err => console.error(err));
 
@@ -59,18 +58,6 @@ const searchExercies = (nameId) => {
 	})
 }
 
-
-// const getExercise = (response) => {
-// 	const exer = response
-// 	//console.log(exer)
-// 	for(const key of exer){
-// 		let cat = key.category
-// 		// console.log(cat)
-// 		//console.log(key.level)
-// 		// console.log(key.category)
-// 		// console.log(key.level)
-// 	}
-// }
 
 
 main()

@@ -24,8 +24,58 @@ nav{
     padding: 12px;
 }
 .links a{
-    
+
 }
+/*
+section{
+    display: flex;
+    background: orange;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: green; 
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff38e;
+}
+
+.container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+    background: gray;
+}
+
+.container .contInfo{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: black;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+}
+.container .contform{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+}
+*/
 
 
 .jobmaster{
