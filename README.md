@@ -14,6 +14,9 @@ Design link: https://www.figma.com/file/HTE4zwHKqLAeAlXdtkNdPD/Untitled?node-id=
 api in use : https://github.com/wrkout/exercises.json.git
 
 
+link to website:https://alvo254.github.io/Fitness-Hero/
+
+
 
 1. `npm install ` - to install all deps
 
